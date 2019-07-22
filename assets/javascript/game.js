@@ -35,14 +35,39 @@ $(document).ready(function() {
   };
 
   function startGame() {
-    $(".questions").append("<h1>Welcome to IQ test!</h1>");
+    $(".questions").append("<h1 id='welcome'>Welcome to IQ test!</h1>");
     setTimeout(function() {
-      $(".questions").replaceWith(test.questions.q1);
+      $(".questions").replaceWith("<h3>" + test.questions.q1 + "</h3>");
     }, 4000);
-    $(".answers").append(
-      "<button id='btn1'" + test.options.q1[0] + "</button>"
-    );
+    setTimeout(function() {
+      $(".num1").append(
+        "<button type='button' class='btn btn-primary'>" +
+          test.options.q1[0] +
+          "</button>"
+      );
+    }, 4000);
+    setTimeout(function() {
+      $(".num2").append(
+        "<button type='button' class='btn btn-primary'>" +
+          test.options.q1[1] +
+          "</button>"
+      );
+    }, 4000);
+    setTimeout(function() {
+      $(".num3").append(
+        "<button type='button' class='btn btn-primary'>" +
+          test.options.q1[2] +
+          "</button>"
+      );
+    }, 4000);
+    setTimeout(function() {
+      $(".num4").append(
+        "<button type='button' class='btn btn-primary'>" +
+          test.options.q1[3] +
+          "</button>"
+      );
+    }, 4000);
   }
 
-  //startGame();
+  startGame();
 });

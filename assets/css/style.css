@@ -21,20 +21,19 @@ body {
 .title {
   width: 100%;
   height: 15%;
-  border: 1px solid black;
 }
 .conditions {
   width: 100%;
   height: 10%;
-  border: 1px solid black;
 }
 .questions {
   width: 100%;
   height: 40%;
-  border: 1px solid black;
 }
 .answers {
   width: 100%;
   height: 35%;
-  border: 1px solid black;
+}
+#welcome {
+  text-align: center;
 }
