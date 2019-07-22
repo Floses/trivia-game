@@ -1,0 +1,21 @@
+* {
+  width: 100%;
+  height: 100%;
+}
+/* here we style the wrapper using a flex box, this allows us to cover the page and align our content gameArea in the center */
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background-color: blueviolet;
+}
+/* used another flexbox for our gameArea, this will make it easier to adjust our other content within it later */
+.gameArea {
+  display: flex;
+  flex-direction: row;
+  background-color: pink;
+  height: 50%;
+  width: 50%;
+}
