@@ -1,6 +1,6 @@
 $(document).ready(function() {
-  var setTime = setTimeout();
-
+  var clearTime = clearTimeout();
+  var timeOn = false;
   var test = {
     questions: {
       q1: "Which number should come next in the pattern? 37, 34, 43, 40...",
@@ -32,4 +32,13 @@ $(document).ready(function() {
       q5: "10"
     }
   };
+
+  function startGame() {
+    var timeOn = true;
+    $(".conditions").append("<h1>Welcome to IQ test!</h1>");
+    setTimeout(function() {
+      $(".conditions").empty();
+    }, 4000);
+  }
+  startGame();
 });
