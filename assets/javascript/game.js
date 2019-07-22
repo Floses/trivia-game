@@ -12,7 +12,7 @@ $(document).ready(function() {
         "Which of the following can be arranged into a 5-letter English word?",
       q5: "What number best completes the analogy: 96 is to 8 as 120 is to ..."
     },
-    answers: {
+    options: {
       q1: ["25", "31", "49", "37"],
       q2: ["drawing", "writing", "stirring", "eating"],
       q3: [
@@ -23,6 +23,13 @@ $(document).ready(function() {
       ],
       q4: ["H R G S T", "R I L S A", "T O M M T", "W Q R G S"],
       q5: ["8", "12", "4", "10"]
+    },
+    answers: {
+      q1: "49",
+      q2: "eating",
+      q3: "talkative and loquacious",
+      q4: "R I L S A",
+      q5: "10"
     }
   };
 });
