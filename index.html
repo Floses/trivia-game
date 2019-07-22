@@ -4,7 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link href="assets/css/reset.css" rel="stylesheet" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
     <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="assets/javascript/game.js" rel="javascript"></script>
@@ -19,11 +24,11 @@
     B) timer and win/lose display area
     C) an area for our question and answer choices -->
     <div class="wrapper">
-      <div class="gameArea">
-        <div class="title">
-          IQ Test!
-          <div class="conditions"><div class="questions"></div></div>
-        </div>
+      <div class="gameArea jumbotron-fluid col-6 offset-3">
+        <div class="title jumbotron-fluid"></div>
+        <div class="conditions jumbotron-fluid"></div>
+        <div class="questions jumbotron-fluid"></div>
+        <div class="answers jumbotron-fluid"><div class="col-3"></div></div>
       </div>
     </div>
   </body>
